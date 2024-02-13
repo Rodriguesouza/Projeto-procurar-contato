@@ -15,25 +15,26 @@ const contacts = [
 
 function serch () {
 
-    for (let i = 0; i < contacts.length; i++) {
+    for ( const contact of contacts) {
 
-        if (input.value.toLowerCase()=== contacts[i].name.toLowerCase()) {
+        if( input.value.toLowerCase() === contact.name.toLowerCase()) {
 
-             p.innerHTML = `Contato encontrado Nome: ${contacts[i].name} Tel: ${contacts[i].number}`
+            p.innerHTML = ` Contato encontrado Nome: ${contact.name} Tel: ${contact.number}`
 
-             break
+            break
 
-        }  else {
+        } else { 
 
-            p.innerHTML = "Contato não encontrado"
-
-
+            p.innerHTML = "Contato não encontrado tente novamente"
         }
-
     }
-
-
-
 }
+
+ 
+
+
+
+
+
 
 
